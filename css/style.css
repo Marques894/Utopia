@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+    transition: 0.5s;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;  
+}
+
+
+/**********************************Header********************************/
+
+.tape-one {
+height: 120px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.tape-one nav {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.tape-one a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.tape-one  a:hover {
+    color: rgba(22, 134, 95, 1);
+    
+}
+
+#color-green-acesso{
+    color: rgba(22, 134, 95, 1);
+}
+
+
+
+
+input[type="checkbox"] {
+    display: none;
+}
+
+
+label {
+    background-color:rgba(34, 34, 34, 1);
+    font-size: 19px;
+    padding: 6px 8px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+label i {
+    color: white;
+    margin-top: 2px;
+    z-index: 1;
+}
+
+label .bi-sun {
+    color: rgba(34, 34, 34, 1);
+}
+
+.dark-mode label{
+    background-color: white;
+}
+
+.dark-mode, 
+.dark-mode header {
+    background-color:rgba(34, 34, 34, 1);
+}
+  
+.dark-mode .tape-one a {
+    color: white;
+}
+
+.dark-mode .tape-one a:hover {
+    color: rgba(22, 134, 95, 1);;
+}
+
+.dark-mode .tape-three {
+    background-color: white;
+    color: rgba(34, 34, 34, 1);
+}
+.dark-mode .tape-three p {
+    color: rgba(22, 134, 95, 1);
+}
+
+
+
+
+
+
+
+.tape-two {
+    background-color: rgba(22, 134, 95, 1);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tape-two p {
+    color: black;
+    font-size: 25px;
+}
+
+
+
+
+.tape-three {
+    background-color: rgba(34, 34, 34, 1);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tape-three p{
+    color: rgba(22, 134, 95, 1);
+    font-size: 25px;
+}
+
+/**********************************Header********************************/
+
+
+/***********************************Main*********************************/
+
+main {
+    flex:1; /*Faz a divisão*/
+}
+
+.center {
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.center p {
+    font-size: 50px;
+    transition: 1.5s;
+}
+
+/*Dark Mode*/
+
+.dark-mode .center p { /*Muda a cordo do "Utopia"*/
+    color: white;    
+}
+
+/*Dark Mode*/
+
+/***********************************Main*********************************/
