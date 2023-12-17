@@ -36,9 +36,10 @@ body {
 }
 
 .tape-one nav {
+    margin-left: 48px;
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 60%;
 }
 
 .tape-one a {

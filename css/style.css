@@ -10,6 +10,7 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
+
     flex-direction: column;  
 }
 
@@ -24,9 +25,10 @@ align-items: center;
 }
 
 .tape-one nav {
+    
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 60%;
 }
 
 .tape-one a {
@@ -141,6 +143,7 @@ label .bi-sun {
 /***********************************Main*********************************/
 
 main {
+   
     flex:1; /*Faz a divisão*/
 }
 
@@ -150,7 +153,8 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+    gap: 25px;
+
 }
 
 .center p {
@@ -167,3 +171,40 @@ main {
 /*Dark Mode*/
 
 /***********************************Main*********************************/
+
+@media screen and (max-width: 600px) {
+    
+    .tape-one  {
+        flex-direction: column-reverse;
+        width: 100%;
+        
+    }
+
+    .tape-one a {
+        font-size: 70%;
+        display: flex;
+    }
+
+    .tape-one nav {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+    }
+
+
+    .tape-one label {
+        width: 45px;
+        height: 25px;
+        left: 150px;
+        top: 8px;
+    }
+
+    .tape-one label i {
+        font-size: 13px;
+    }
+}

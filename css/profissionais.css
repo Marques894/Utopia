@@ -29,9 +29,10 @@ box-shadow: 0px 1px 20px 1px rgba(2, 2, 2, 0.514);
 }
 
 .tape-one nav {
+    margin-left: 48px;
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 60%;
 }
 
 .tape-one a {
