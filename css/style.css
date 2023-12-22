@@ -207,11 +207,10 @@ main {
         display: flex;
         gap: 18px;
         font-size: 130%;
-        
+    }
 
-        img {
-            width: 40px;
-        }
+    .tape-one nav img {
+        width: 40px;
     }
 
     .tape-one a {
