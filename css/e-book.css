@@ -23,23 +23,34 @@ body {
 
 
 /**********************************Header********************************/
-
-
-
 .tape-one {
-    width: 100%;
     height: 120px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     box-shadow: 0px 1px 20px 1px rgba(2, 2, 2, 0.514);
 }
 
-.tape-one nav {
-    margin-left: 48px;
+.box-one {
     display: flex;
-    justify-content: space-between;
-    width: 60%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: 90%;
+
+}
+
+.tape-one nav {
+
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    align-items: end;
+    width: 100%;
+}
+
+.tape-one nav img {
+    width: 50px;
 }
 
 .tape-one a {
@@ -50,19 +61,20 @@ body {
 
 .tape-one a:hover {
     color: rgba(22, 134, 95, 1);
+
 }
 
-#color-green-acesso{
+#color-green-acesso {
     color: rgba(22, 134, 95, 1);
 }
 
 
 
 
-
-
 input[type="checkbox"] {
     display: none;
+    background-color: pink;
+
 }
 
 
@@ -75,8 +87,6 @@ label {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    position: relative;
-
 }
 
 label i {
@@ -89,16 +99,9 @@ label .bi-sun {
     color: rgba(34, 34, 34, 1);
 }
 
-
-
-
-
 .dark-mode label {
     background-color: white;
 }
-
-
-
 
 .dark-mode,
 .dark-mode header {
@@ -111,23 +114,18 @@ label .bi-sun {
 
 .dark-mode .tape-one a:hover {
     color: rgba(22, 134, 95, 1);
+    ;
 }
 
-/**********************************Header********************************/
 
 
 
-/***********************************Main*********************************/
 main {
     flex: 1;
     /*Faz a divisão correta de acordo com o tamanho da tela*/
     height: 100%;
 
 }
-
-
-
-
 
 .section-title {
     max-width: 100%;
@@ -225,3 +223,42 @@ input {
     color: white;
 }
 /***********************************Main*********************************/
+
+@media screen and (max-width: 600px) {
+
+    .tape-one {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .box-one {
+        display: flex;
+        gap: 60%;
+        margin-bottom: 50px;
+        margin-right: 40px;
+    }
+
+    .tape-one nav {
+        padding-top: 40px;
+        width: 90%;
+        display: flex;
+        gap: 18px;
+        font-size: 130%;
+    }
+
+    .tape-one nav img {
+        width: 40px;
+    }
+
+    .tape-one a {
+        font-size: 70%;
+    }
+
+
+    .tape-one label {
+        width: 50px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+}
