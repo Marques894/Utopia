@@ -183,18 +183,15 @@ input {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 50px;
 }
 
 .big-box {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: start;
+    align-items: center;
     gap: 10px;
-    padding: 50px;
-    margin: 25px;
-    border-radius: 3px;
+    margin: 100px;
 }
 
 
@@ -259,6 +256,27 @@ input {
         width: 50px;
         height: 30px;
         font-size: 14px;
+    }
+
+
+    .section-title {
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+
+    .section-title h2 {
+        font-size: 20px;
+    }
+
+    .conteiner-pesquisa {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .big-box img {
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+        width: 100px;
     }
 
 }

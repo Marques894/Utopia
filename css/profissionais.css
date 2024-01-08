@@ -205,4 +205,21 @@ input {
         font-size: 14px;
     }
 
+
+    
+
+    .section-title {
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+
+    .section-title h2 {
+        font-size: 20px;
+    }
+
+
+    .conteiner-pesquisa {
+        display: flex;
+        justify-content: center;
+    }
 }

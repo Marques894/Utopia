@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    box-shadow: 0px 1px 20px 1px rgba(2, 2, 2, 0.514);
 }
 
 .box-one {
@@ -108,53 +108,9 @@ label .bi-sun {
 
 .dark-mode .tape-one a:hover {
     color: rgba(22, 134, 95, 1);
-    ;
-}
-
-.dark-mode .tape-three {
-    background-color: white;
-    color: rgba(34, 34, 34, 1);
-}
-
-.dark-mode .tape-three p {
-    color: rgba(22, 134, 95, 1);
 }
 
 
-
-
-
-
-
-.tape-two {
-    background-color: rgba(22, 134, 95, 1);
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.tape-two p {
-    color: black;
-    font-size: 25px;
-}
-
-
-
-
-.tape-three {
-    background-color: rgba(34, 34, 34, 1);
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.tape-three p {
-    color: rgba(22, 134, 95, 1);
-    font-size: 25px;
-}
 
 /**********************************Header********************************/
 
@@ -162,36 +118,30 @@ label .bi-sun {
 /***********************************Main*********************************/
 
 main {
-
     flex: 1;
     /*Faz a divisão*/
 }
 
-.center {
+.slogan {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 25px;
-
 }
 
-.center p {
+.slogan p {
     font-size: 50px;
     transition: 1.5s;
+    color: rgb(0, 0, 0);
 }
 
-/*Dark Mode*/
-
-.dark-mode .center p {
-    /*Muda a cordo do "Utopia"*/
+.dark-mode .slogan p {
     color: white;
 }
 
-/*Dark Mode*/
 
-/***********************************Main*********************************/
 
 @media screen and (max-width: 600px) {
 

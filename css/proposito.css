@@ -123,7 +123,6 @@ main {
     width: 100%;
     padding-left: 100px;
     padding-top: 100px;
-    left: 50px;
     display: flex;
     align-items: center;
 }
@@ -139,9 +138,11 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
 }
 
 section p {
@@ -156,16 +157,14 @@ section p {
 }
 
 
-
-
-
 .section-icons {
     width: 100%;
 }
 
 .icons {
     display: flex;
-    gap: 300px;
+    gap: 20%;
+    padding: 100px;
     justify-content: center;
 }
 
@@ -208,4 +207,33 @@ section p {
         font-size: 14px;
     }
 
+
+
+
+    .section-title {
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+
+    .section-text {
+
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    section p {
+        font-size: 15px;
+    }
+
+
+    .icons {
+        width: 100%;
+        display: flex;
+        gap: 20%;
+        padding: 30px;
+    }
+
+    .section-icons .icons img {
+        width: 10%;
+    }
 }
